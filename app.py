@@ -14,7 +14,7 @@ def get_info():
     
     email = "reubenjeffery47@gmail.com"
     
-    current_time = datetime.now(timezone.utc) .isoformat()
+    current_time = datetime.now(timezone.utc).isoformat()
     
     github_url = "https://github.com/Reuben-jeffery/Hng12_api"
     
