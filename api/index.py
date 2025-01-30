@@ -18,5 +18,7 @@ def get_info():
         "github_url": github_url
     })
     
-if __name__ == '__main__':
-    app.run(debug=True)   
+
+def handler(request, context):
+    with app.app_context():
+        return app.full_dispatch_request(request)
