@@ -3,7 +3,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-@app.route('/appi', methods=['GET'])
+@app.route('/api', methods=['GET'])
 def get_info():
     
     email = "reubenjeffery47@gmail.com"
