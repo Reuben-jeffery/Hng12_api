@@ -8,9 +8,9 @@ def get_info():
     
     email = "reubenjeffery47@gmail.com"
     
-    current_time = datetime.utcnow().isoformat() + 'Z'
+    current_time = datetime.utcnow().isoformat()
     
-    github_url = "https://github.com/Reuben-jeffery/Hng12_api.git"
+    github_url = "https://github.com/Reuben-jeffery/Hng12_api"
     
     return jsonify({
         "email": email,
@@ -19,6 +19,5 @@ def get_info():
     })
     
 
-def handler(request, context):
-    with app.app_context():
-        return app.full_dispatch_request(request)
+if __name__ == "__main__":
+    app.run(debug=True)
