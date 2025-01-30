@@ -1,8 +1,13 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, redirect
 from datetime import datetime
 import os
 
 app = Flask(__name__)
+
+@app.route('/')
+
+def home():
+    return redirect('/api')
 
 @app.route('/api', methods=['GET'])
 def get_info():
