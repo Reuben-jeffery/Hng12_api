@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, redirect
-from datetime import datetime
+from datetime import datetime, timezone
 import os
 
 app = Flask(__name__)
@@ -14,7 +14,7 @@ def get_info():
     
     email = "reubenjeffery47@gmail.com"
     
-    current_time = datetime.utcnow().isoformat() + "Z"
+    current_time = datetime.now(timezone.utc) .isoformat()
     
     github_url = "https://github.com/Reuben-jeffery/Hng12_api"
     
