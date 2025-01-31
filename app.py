@@ -14,7 +14,7 @@ def get_info():
     
     email = "reubenjeffery47@gmail.com"
     
-    current_time = datetime.now(timezone.utc).isoformat()
+    current_time = datetime.utcnow().isoformat(timespec='seconds') + "Z"
     
     github_url = "https://github.com/Reuben-jeffery/Hng12_api"
     
@@ -26,5 +26,4 @@ def get_info():
     
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+   app.run(debug=True)
