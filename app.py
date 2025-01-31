@@ -16,13 +16,13 @@ def get_info():
     
     email = "reubenjeffery47@gmail.com"
     
-    current_time = datetime.utcnow().isoformat(timespec='seconds') + "Z"
+    current_datetime = datetime.utcnow().isoformat(timespec='seconds') + "Z"
     
     github_url = "https://github.com/Reuben-jeffery/Hng12_api"
     
     return jsonify({
         "email": email,
-        "current_time": current_time,
+        "current_datetime": current_datetime,
         "github_url": github_url
     })
     
